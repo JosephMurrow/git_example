@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gay club "Blue Oyster" Login page</title>
+    <style>
+        img.background {
+            min-height: 100%;
+            min-width: 640px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      form.loginPage {
+          position: absolute;
+          line-height: 200px;
+          /height: 100px;
+          width: 100%;
+          padding: 400px 0;
+          text-align: center;
+          height: auto%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 15pt;
+
+      }
+      form > * {
+          width: 100%;
+          max-width: 300px;
+          font-size: inherit;
+      }
+      h1.title {
+          position: absolute;
+          font-size: 50px;
+          text-align: center;
+          width: 100%;
+          z-index: 2;
+          color: blue;
+          text-shadow: 3px 3px 3px hotpink;
+      }
+    </style>
+</head>
+<body>
+<h1 class="title">Добро пожаловать в клуб "Голубая Устрица"</h1>
+<img src="https://www.meme-arsenal.com/memes/2004a219ce7c752f40f007f5f7ab5a0e.jpg" class ="background"/>
+<form class="loginPage">
+    <input class="text" placeholder="Введите имя клиента клуба" name="loginString">
+    <input class="text" placeholder="Введите пароль клиента клуба" name="passwordString">
+    <input class="button" type="submit" value="Нажмимай сюда сладкий" name="submitStuff">
+</form>
+</body>
+</html>

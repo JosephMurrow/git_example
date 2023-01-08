@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест на пидОра</title>
+    <style>
+        .boss-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        form input {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<img class="boss-img" src="https://uznayvse.ru/images/content/2017/11/uzn_15100661966.jpg"/>
+<form class="boss-img">
+    <input type="text" placeholder="Введи имя для теста на пидОра" name = "penis">
+    <input type="submit" value="начать тест на пидОра">
+    <!--to do
+    1 - how to make form not to refresh page when name was submited
+    2 - implement loop to convince user to admit his gay orientation
+    3 - make design great again
+    -->
+</form>
+
+
+
+<script> let form = document.querySelector("form")
+        form.addEventListener('submit', function(event) {
+event.preventDefault();
+let name = retrieveName(event.target)
+while (!confirm(name + " Ты пидОр?")) {
+alert ("пиздобол выходит, подумай еще раз")
+}
+alert ("хорошо что сознался  " + name)
+});
+function retrieveName (form) {
+return form.penis.value
+}
+</script>
+</body>
+</html>
